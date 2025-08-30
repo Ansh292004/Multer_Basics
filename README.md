@@ -2,7 +2,7 @@
 
 
 
-This is a simple *Node.js + Express* project that demonstrates how to upload files using [Multer](https://https://github.com/Ansh292004/Node.js-file-uploads-with-Express-and-Multer).  
+This is a simple *Node.js + Express* project that demonstrates how to upload files using *MULTER*.
 The project supports image uploads (.jpg, .jpeg, .png, .gif) with proper file filtering and custom storage configuration.
 
 ---
@@ -23,3 +23,10 @@ The project supports image uploads (.jpg, .jpeg, .png, .gif) with proper file fi
 - *EJS* (for rendering the upload form)
 
 ---
+## Project Structure
+├── uploads/        # Uploaded files
+├── views/          # EJS templates
+│   └── file.ejs    # Upload form
+├── index.js        # Main application file
+├── package.json    # Project metadata & dependencies
+└── README.md       # Documentation
