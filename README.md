@@ -24,9 +24,10 @@ The project supports image uploads (.jpg, .jpeg, .png, .gif) with proper file fi
 
 ---
 ## Project Structure
-  ├── uploads/        # Uploaded files
-  ├── views/          # EJS templates
-  │   └── file.ejs    # Upload form
-  ├── index.js        # Main application file
-  ├── package.json    # Project metadata & dependencies
-  └── README.md       # Documentation
+ .
+├── uploads/        # Uploaded files
+├── views/          # EJS templates
+│   └── file.ejs    # Upload form
+├── index.js        # Main application file
+├── package.json    # Project metadata & dependencies
+└── README.md       # Documentation
