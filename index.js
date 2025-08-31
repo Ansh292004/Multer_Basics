@@ -66,7 +66,7 @@ app.post('/upload', (req, res) => {
   // CALL MULTER MIDDLEWARE
   upload.single('myFile')(req, res, function (err) {
     if (err) {
-      return res.status(400).send({ error: err.message });
+      return res.status(400).send({ error: err.message });//use err.message instead of whole err object as it provides whole stack of errors and ca cause hinders in prod(in development for deep dive err is fine)
     }
     // REDIRECT TO FORM AFTER SUCCESSFUL UPLOAD
     res.redirect('/');
@@ -77,4 +77,5 @@ app.post('/upload', (req, res) => {
 // START EXPRESS SERVER
 app.listen(PORT, () => {
   console.log(`SERVER IS RUNNING AT PORT: ${PORT}`);
+
 });
